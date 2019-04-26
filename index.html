@@ -75,7 +75,7 @@ jQuery.fn.shake = function(interval,distance,times){
       jTarget.animate({ left: ((iter%2==0 ? distance : distance*-1))}, interval);
       testit = round((1-(iter/times)),1);
    }
-   return jTarget.animate({ left: 0},interval).fadeOut(1000);
+   return jTarget.animate({ left: 0},interval).fadeOut(1500);
 }
 
 $( document ).ready(function() {
