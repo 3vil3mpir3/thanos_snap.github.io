@@ -37,9 +37,12 @@ function animateme(poof,length,num){
   $(poof).shake(70,20,10).addClass("poofed");
   $('.count').html("<h2>Total Link count is: " + $('.g').not('.poofed').length+"</h2>");
   if(num+1==length){
-    $('html, body').animate({
-        scrollTop: (0)
-    },500);
+    setTimeout(function() {
+      $('html, body').animate({
+          scrollTop: (0)
+      },500);
+    }, 2500);
+
   }
 
 }
